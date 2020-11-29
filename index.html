@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="header.css" />
+    <script defer src="toggle.js"></script>
+    <link rel="stylesheet" href="media-queries.css" />
+    <title>Black Hole Sounds</title>
+  </head>
+  <body>
+    <header id="header">
+      <div id="brand">
+        <img
+          src="./record-player.png"
+          alt="Cartoon image of a record player."
+          id="header-img"
+          />
+        <h1>Black Hole Sounds</h1>
+
+        <nav role="navigation" id="tablet-nav">
+          <ul class="links">
+            <li>
+              <a class="nav-link" href="#thing-one">About</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#thing-two">Thing Two</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#thing-three">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <input type="checkbox" name="menu-state" id="toggle" />
+
+      <label for="toggle" id="menu">
+        <span class="hamburger" id="top-line"></span>
+
+        <span class="hamburger" id="mid-line">
+          <nav role="navigation" id="nav-bar">
+            <ul class="links">
+              <li>
+                <a class="nav-link" href="#thing-one">About</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#thing-two">Thing Two</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#thing-three">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </span>
+
+        <span class="hamburger" id="bottom-line"></span>
+      </label>
+
+      <!-- <div id="record">
+        <span id="record-label">
+          <span id="hole"></span>
+        </span>
+      </div> -->
+    </header>
+
+    <main>
+      <section id="thing-one" class="card">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ab
+          recusandae vitae aliquam maxime numquam ex voluptates libero quos
+          sequi illo, praesentium beatae doloremque dolorum. Soluta, deleniti.
+          Fuga, porro rem.
+        </p>
+        <video controls id="video">
+          <source
+            src="record-player.mp4"
+            type="video/webm"
+          />
+        </video>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ab
+          recusandae vitae aliquam maxime numquam ex voluptates libero quos
+          sequi illo, praesentium beatae doloremque dolorum. Soluta, deleniti.
+          Fuga, porro rem.
+        </p>
+      </section>
+      <section id="thing-two" class="card">
+        <h2>Thing Two</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ab
+          recusandae vitae aliquam maxime numquam ex voluptates libero quos
+          sequi illo, praesentium beatae doloremque dolorum. Soluta, deleniti.
+          Fuga, porro rem.
+        </p>
+      </section>
+      <section id="thing-three" class="card">
+        <h2>Contact</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <form
+          action="https://www.freecodecamp.com/email-submit"
+          method="post"
+          id="form"
+        >
+          <label for="email">Sign up for the monthly newsletter</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address . . ."
+            required
+          />
+          <input type="submit" value="Get the newsletter" id="submit" />
+        </form>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ab
+          recusandae vitae aliquam maxime numquam ex voluptates libero quos
+          sequi illo, praesentium beatae doloremque dolorum. Soluta, deleniti.
+          Fuga, porro rem.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>. . . Feet Running . . .</p>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
